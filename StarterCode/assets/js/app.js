@@ -61,9 +61,9 @@ let yLinearScale = d3.scaleLinear()
         .attr("cy", d => yLinearScale(d.healthcare))
         .attr("r", 10)
         .attr("fill", "pink")
-        .attr("opacity", ".6")
+        .attr("opacity", ".7")
         .attr("stroke-width", "1")
-        .attr("stroke", "black");
+        .attr("stroke", "purple");
 
         basicChart.select("g")
         .selectAll("circle")
@@ -75,7 +75,7 @@ let yLinearScale = d3.scaleLinear()
         .attr("y", d => yLinearScale(d.healthcare))
         .attr("dy",-395)
         .attr("text-anchor", "middle")
-        .attr("font-size", "12px")
+        .attr("font-size", "10px")
         .attr("fill", "black");
 
         console.log(riskData);
